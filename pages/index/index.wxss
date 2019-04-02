@@ -1,3 +1,51 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content {
+  align-content: center;
+  display: 0 auto;
+}
+
+.half-height {
+  height: 50%;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: lato;
+}
+
+.subtitle {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 22px;
+  font-weight: 200;
+  text-align: center;
+  font-family: lato;
+}
+
+
+.primary-button {
+  margin: 20px 5px;
+  background-color:  #3165EC;
+  color: white;
+  
+}
+
+
+
 /**index.wxss**/
 .userinfo {
   display: flex;
