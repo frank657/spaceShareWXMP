@@ -5,18 +5,24 @@
   background-size: cover !important;
   background-position: center;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-
+  height: 120px;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center; 
 }
 
 .title-white-me {
+  margin-left: 10px;
   font-family: lato;
   color: white;
   font-size: 20px;
   text-align: left;
- 
+  margin-bottom: 5px;
 }
 
 .subtitle-white-me {
+  margin-left: 10px;
+  margin-top: 10px;
   font-family: lato;
   color: white;
   font-size: 16px;
@@ -24,28 +30,14 @@
 
 }
 
-.header-me {
-  height: 150px;
-  padding: 15px 15px;
-
-}
-
 .avatar {
-
-}
-
-.img-holder {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  overflow: hidden;
-}
-.img-holder img {
-  position: absolute;
+  width: 100px;
+  height: 100px;
   display: block;
   top: 0;
   left: 0;
 }
+
 
 .container-show-spaces {
   /* padding: 10rpx 15rpx; */
@@ -76,6 +68,9 @@ font-style: normal;
 font-weight: 900;
 font-size: 14px;
 text-align: center;
+content-align: left;
+position: absolute;
+margin-left: 5%;
 }
 
 .note {
@@ -85,4 +80,11 @@ font-weight: normal;
 font-size: 14px;
 line-height: 16px;
 color: #626B80;
+margin-top: 15px;
+}
+
+.item-flex-container {
+width: 30px;
+margin: 30px;
+text-align: center;
 }

@@ -13,6 +13,12 @@ Page({
    */
   onLoad: function (options) {
 
+ },
+
+  createSpace: function () {
+    wx.navigateTo({
+      url: `../spacenew/spacenew`
+    });
   },
 
   /**

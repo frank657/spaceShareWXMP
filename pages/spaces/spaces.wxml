@@ -5,11 +5,10 @@
     </view>
 
 
-
-
 <view wx:for="{{spaces}}" wx:for-item="space" wx:key="space.id" bindtap="showSpace" class="card" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{space.picture}}');" data-space="{{space}}">
 
 <view class="flex">
+
   <view class="card-space-name">
     {{space.name}}
   </view>

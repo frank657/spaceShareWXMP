@@ -9,13 +9,13 @@
 
     <view class="amenities">Amenities</view>
 
-    <view class="amenities-items">
+    <view class="flex-items">
  
-      <image src="/images/wifi.png" class="icon"/>
-      <image src="/images/coffee.png" class="icon"/>
-      <image src="/images/sofa.png" class="icon"/>
-      <image src="/images/beer.png" class="icon"/>
-      <image src="/images/purified_air.png" class="icon"/>
+      <image src="/images/wifi.png"/>
+      <image src="/images/coffee.png"/>
+      <image src="/images/sofa.png"/>
+      <image src="/images/beer.png"/>
+      <image src="/images/purified_air.png"/>
   
     </view>
 </view>
