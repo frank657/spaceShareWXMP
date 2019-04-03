@@ -10,7 +10,23 @@
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height"    name="name" maxlength="-1" auto-height />
+      <textarea value="{{name}}" style="input-size" placeholder="Name" class="input-height"    name="name" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+<!-- <view>
+  <view>District:</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 100px;" value="{{districts}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{districts}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view> -->
+
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{district}}" style="input-size"placeholder="District" class="input-height"    name="district" maxlength="-1" auto-height />
       </view>
     </view>
 
@@ -20,22 +36,33 @@
       </view>
     </view>
 
-           <view class="user-input">
+    <view class="user-input">
       <view class="text-area-wrap">
       <textarea value="{{price}}" style="input-size"placeholder="Price per day" class="input-height" name="price" maxlength="-1" auto-height />
       </view>
     </view>
 
-       <view class="user-input">
+    <view class="user-input">
       <view class="text-area-wrap">
       <textarea value="{{picture}}" style="input-size"placeholder="Picture" class="input-height" name="picture" maxlength="-1" auto-height />
       </view>
     </view>
 
-           <view class="user-input">
+    <view class="user-input">
       <view class="text-area-wrap">
       <textarea value="{{available_spots}}" style="input-size"placeholder="Number of available spots" class="input-height" name="available_spots" maxlength="-1" auto-height />
       </view>
+    </view>
+
+    <view class="user-input">
+      <view class="section__title">Amenities</view>
+      <checkbox-group name="amenities">
+        <label><checkbox value="wifi"/>WiFi</label>
+        <label><checkbox value="sofa"/>Sofa Area</label>
+        <label><checkbox value="air"/>Purified Air</label>
+        <label><checkbox value="coffee"/>Coffee</label>
+        <label><checkbox value="beer"/>Beer</label>
+      </checkbox-group>
     </view>
 
     <button  class="button-primary" form-type="submit" loading="{{loading}}">Submit</button>
