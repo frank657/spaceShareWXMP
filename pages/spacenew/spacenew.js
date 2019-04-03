@@ -1,51 +1,68 @@
 // pages/spacenew/spacenew.js
+var app = getApp()
+const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    districts: districts
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+  },
 
-    // New Space Submission
-    // bindSubmit: function (s) {
+  // New Space Submission
+  bindSubmit: function (s) {
+    const name = s.detail.value.name;
+    const district = s.detail.value.district;
+    const address = s.detail.value.address_details;
+    const spots = s.detail.value.available_spots;
+    const picture = s.detail.value.picture;
+    const price = s.detail.value.price
+    const amenities = s.detail.value.amenities
 
-    //   var name = s.detail.value.name;
-    //   var address = s.detail.value.address;
-    //   var spots = s.detail.value.available_spots;
-    //   var picture = e.detail.value.picture;
-    //   var price = e.detail.value.price
+    const space = {
+      name: name,
+      district: district, 
+      address_details: address,
+      available_spots: spots,
+      picture: 'https://source.unsplash.com/800x450/?office',
+      price: price,
+      user_id: app.globalData.userId,
+      wifi: amenities.includes('wifi'),
+      sofa_area: amenities.includes('sofa'),
+      purified_air: amenities.includes('air'),
+      coffee: amenities.includes('coffee'),
+      beer: amenities.includes('beer')
+    }
+    console.log(space)
 
-    //   let space = {
-    //     name: name,
-    //     address_details: address,
-    //     spots: spots,
-    //     picture: picture,
-    //     price: price
-        
-    //   }
-
-      // Get api data
-      wx.request({
-        url: `"https://spaceshare-frank657.herokuapp.com/api/v1/spaces"`,
-        method: 'POST',
-        data: space,
-        success() {
-          // set data on me page and show
-          wx.redirectTo({
-            url: '/pages/me/me'
-          });
-        }
-      });
-
+    // Get api data
+    wx.request({
+      url: `http://localhost:3000/api/v1/spaces`,
+      method: 'POST',
+      data: space,
+      success(a) {
+        console.log(11,a)
+        // set data
+        wx.switchTab({
+          url: '/pages/spaces/spaces'
+        });
+      }
+    });
 
   },
+
+
+
+
+
 
   /**
    * Lifecycle function--Called when page is initially rendered
