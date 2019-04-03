@@ -3,7 +3,7 @@
     <text class="title">Find the perfect office space</text>
     <text class="subtitle">a new exciting work environment every day</text>
     <navigator url="../../pages/spaces/spaces" open-type="switchTab">
-      <button type="button" class="primary-button">Get Started</button>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="button" class="primary-button">Login</button>
     </navigator>
   </view>
 </view>
