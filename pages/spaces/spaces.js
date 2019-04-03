@@ -12,6 +12,28 @@ Page({
    */
 
   onLoad: function (options) {
+
+  },
+
+  showSpace(e) {
+    const data = e.currentTarget.dataset;
+    const space = data.space;
+    wx.navigateTo({
+      url: `../spaceshow/spaceshow?id=${space.id}`
+    });
+  },
+
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * Lifecycle function--Called when page show
+   */
+  onShow: function () {
     let page = this;
 
     // // Display toast when loading
@@ -36,28 +58,6 @@ Page({
         wx.hideToast();
       }
     });
-  },
-
-  showSpace(e) {
-    const data = e.currentTarget.dataset;
-    const space = data.space;
-    wx.navigateTo({
-      url: `../spaceshow/spaceshow?id=${space.id}`
-    });
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
   },
 
   /**
