@@ -3,11 +3,9 @@
 
 <view class="container-show-spaces">
 
-    <view class="h3">WeWork</view>
-    <view class="address">5th ave, New York</view>
-      <view class="h3">{{name}}</view>
-      <view class="address">{{address}}</view>
-      <view>{{price}}</view>
+    <view class="h3">{{name}}</view>
+    <view class="address">{{address_details}}</view>
+    <view>{{price}}RMB per day</view>
 
     <view class="amenities">Amenities</view>
 
