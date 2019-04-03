@@ -1,10 +1,17 @@
 .banner-short {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  background-size: cover !important;
+  background-position: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
 }
 
 .title-white {
   font-family: lato;
   color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 /**index.wxss**/
@@ -18,7 +25,7 @@
   color: white;
   position: relative;
   width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 5%;
 }
 .card-user {
@@ -30,9 +37,13 @@
 }
 .card-space-name {
   position: absolute;
-  top: 120px;
+  top: 115px;
   left: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 24px;
 }
 .card-description {
   position: absolute;
