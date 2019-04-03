@@ -9,7 +9,7 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
-  }
+  },
 })
 
 

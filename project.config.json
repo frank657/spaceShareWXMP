@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -54,9 +54,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "Spacesshow",
-					"pathName": "pages/spacesshow/spacesshow",
+					"id": 2,
+					"name": "Spaceshow",
+					"pathName": "pages/spaceshow/spaceshow",
 					"query": "",
 					"scene": null
 				},
