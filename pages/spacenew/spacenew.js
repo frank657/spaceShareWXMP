@@ -2,6 +2,7 @@
 var app = getApp()
 const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
 
+
 Page({
 
   /**
@@ -10,6 +11,14 @@ Page({
   data: {
     districts: districts
   },
+
+  // bindChange: function (e) {
+  //   const val = e.detail.value
+  //   console.log(val)
+  //   this.setData({
+  //     district: this.data.districts[val[0]],
+  //   })
+  // },
 
   /**
    * Lifecycle function--Called when page load
