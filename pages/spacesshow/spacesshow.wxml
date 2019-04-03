@@ -1,0 +1,19 @@
+<view class="header">
+
+    <view class="banner-content">
+
+      <view class="h1">{{name}}</view>
+      <view class="tag">{{address}}</view>
+      <view>{{price}}</view>
+
+      <view class="controls">
+        <image src="/image/edit.png" class="icon" bindtap="editRestaurant"
+          data-id="{{id}}" />
+
+        <image src="/image/recycling-bin.png" class="icon"
+          bindtap="deleteRestaurant" data-id="{{id}}" />
+      </view>
+
+    </view>
+
+</view>

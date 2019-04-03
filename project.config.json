@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -28,13 +28,45 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "Spaces",
+					"pathName": "pages/spaces/spaces",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Bookings",
+					"pathName": "pages/bookings/bookings",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Spacesshow",
+					"pathName": "pages/spacesshow/spacesshow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Index",
+					"pathName": "pages/index/index",
+					"scene": null
+				}
+			]
 		}
 	}
 }
