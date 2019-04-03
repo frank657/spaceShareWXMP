@@ -1,1 +1,88 @@
-/* pages/me/me.wxss */
+.banner-short {
+  background-color: #3165EC;
+  margin-bottom: 30px;
+  font-weight: 800;
+  background-size: cover !important;
+  background-position: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
+}
+
+.title-white-me {
+  font-family: lato;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+ 
+}
+
+.subtitle-white-me {
+  font-family: lato;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.header-me {
+  height: 150px;
+  padding: 15px 15px;
+
+}
+
+.avatar {
+
+}
+
+.img-holder {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.img-holder img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.container-show-spaces {
+  /* padding: 10rpx 15rpx; */
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.my-listings {
+  margin-top: 20px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626B80;
+}
+
+.button-small {
+background: #3165EC;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+border-radius: 10px;
+color: #fff;
+width: 60%;
+font-family: Lato;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+text-align: center;
+}
+
+.note {
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #626B80;
+}
