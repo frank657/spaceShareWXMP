@@ -2,27 +2,5 @@
   <view class="container">
     <text class="title-white">Book this space</text>
     </view>
-    </view>
- 
-  <view class="container-book-space">
-
+ </view>
   
-    <form bindsubmit="bindSubmit">
-
-    <view class="user-input">
-      <view class="text-area-wrap">
-      <textarea value="{{name}}" style="input-size"placeholder="Today 4/3/2019" class="input-height" name="name" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-    <view class="user-input">
-      <view class="text-area-wrap">
-      <textarea value="{{address}}" style="input-size"placeholder="1 Person" class="input-height" name="address" maxlength="-1" auto-height />
-      </view>
-    </view>
-
-    <button class="button-primary" form-type="submit" loading="{{loading}}">Book now</button>
-    </form>
-
-  
-  </view>
