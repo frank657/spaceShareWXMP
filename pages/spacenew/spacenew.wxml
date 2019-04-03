@@ -1,0 +1,29 @@
+<template name="form">
+
+  <view class="header">
+  <view class="h2-header">List your own space</view>
+  </view>
+  <view class="container">
+  <view class="wrap">
+  
+    <form bindsubmit="bindSubmit">
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height" name="name" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{address}}" style="input-size"placeholder="Address" class="input-height" name="address" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+    </form>
+
+  </view>
+  </view>
+
+</template>

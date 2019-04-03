@@ -1,11 +1,44 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/spaces/spaces",
+    "pages/spacesshow/spacesshow",
+    "pages/bookings/bookings",
+    "pages/bookingsnew/bookingsnew",
+    "pages/me/me",
+    "pages/spacenew/spacenew"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "SpaceShare",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#3165EC",
+    "borderStyle": "black",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/spaces/spaces",
+        "iconPath": "images/nav_bar_spaces_unactive.png",
+        "selectedIconPath": "images/nav_bar_spaces_active.png",
+        "text": "spaces"
+      },
+      {
+        "pagePath": "pages/bookings/bookings",
+        "iconPath": "images/nav_bar_bookings_unactive.png",
+        "selectedIconPath": "images/nav_bar_bookings_active.png",
+        "text": "bookings"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/nav_bar_me_unactive.png",
+        "selectedIconPath": "images/nav_bar_me_active.png",
+        "text": "me"
+      }
+    ]
   }
 }

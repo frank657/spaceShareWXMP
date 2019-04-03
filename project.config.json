@@ -37,14 +37,35 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
-					"name": "index",
-					"pathName": "pages/index/index",
+					"name": "Spaces",
+					"pathName": "pages/spaces/spaces",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Bookings",
+					"pathName": "pages/bookings/bookings",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Spacesshow",
+					"pathName": "pages/spacesshow/spacesshow",
+					"query": "",
+					"scene": null
+				},
+				{
+          "id": -1,
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
 				}
 			]
 		}

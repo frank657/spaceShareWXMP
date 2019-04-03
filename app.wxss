@@ -8,3 +8,10 @@
   padding: 150rpx 15rpx;
   box-sizing: border-box;
 } 
+
+.card {
+  background: #EBEBEB;
+  border-radius: 10px;
+  background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%);
+  border-radius: 10px;
+}
