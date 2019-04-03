@@ -14,22 +14,22 @@ Page({
   onLoad: function (options) {
 
     // New Space Submission
-    bindSubmit: function (s) {
+    // bindSubmit: function (s) {
 
-      var name = s.detail.value.name;
-      var address = s.detail.value.address;
-      var spots = s.detail.value.available_spots;
-      var picture = e.detail.value.picture;
-      var price = e.detail.value.price
+    //   var name = s.detail.value.name;
+    //   var address = s.detail.value.address;
+    //   var spots = s.detail.value.available_spots;
+    //   var picture = e.detail.value.picture;
+    //   var price = e.detail.value.price
 
-      let space = {
-        name: name,
-        address_details: address,
-        spots: spots,
-        picture: picture,
-        price: price
+    //   let space = {
+    //     name: name,
+    //     address_details: address,
+    //     spots: spots,
+    //     picture: picture,
+    //     price: price
         
-      }
+    //   }
 
       // Get api data
       wx.request({
