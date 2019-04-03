@@ -1,2 +1,20 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="banner-short">
+  <view class="header-me">
+  <view class="flex-box">
+      <view class="img-holder">
+      <image src="/images/human.png"/>
+      </view>
+        <view>
+        <text class="title-white-me">Name</text>
+        <text class="subtitle-white-me">Title</text>
+        </view>
+    </view>
+  </view>
+</view>
+  
+  <view class="container-show-spaces">
+  <view class="my-listings">My listings</view>
+  <view class="note">You don't have any listings yet. Want to become a space owner?</view>
+  </view>
+
+<button class="button-small" form-type="submit" loading="{{loading}}">Create my first listing</button>

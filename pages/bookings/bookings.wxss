@@ -1,1 +1,15 @@
-/* pages/bookings/bookings.wxss */
+.banner-short {
+  margin-bottom: 30px;
+  font-weight: 800;
+  background-size: cover !important;
+  background-position: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
+}
+
+.title-white {
+  font-family: lato;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}

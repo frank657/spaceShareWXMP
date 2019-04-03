@@ -1,1 +1,66 @@
-/* pages/spacesshow/spacesshow.wxss */
+.banner-show-space {
+  margin-bottom: 30px;
+  background-size: cover !important;
+  background-position: center;
+  height: 180px;
+}
+
+.button-primary {
+background: #3165EC;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+border-radius: 10px;
+color: #fff;
+width: 90%;
+font-family: Lato;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+text-align: center;
+}
+
+.h3 {
+font-family: Lato;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 24px;
+margin-bottom: 5px;
+color: #333333;
+}
+
+.address {
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #626B80;
+}
+
+.container-show-spaces {
+  /* padding: 10rpx 15rpx; */
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.amenities {
+  margin-top: 20px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626B80;
+}
+
+.amenities-items {
+  display: flex;
+}
+
+.icon {
+  image-size: 10px;
+  height: 20px;
+  image-size:cover; 
+  background-position:center center; 
+}

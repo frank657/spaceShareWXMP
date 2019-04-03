@@ -1,19 +1,29 @@
-<view class="header">
-
-    <view class="banner-content">
-
-      <view class="h1">{{name}}</view>
-      <view class="tag">{{address}}</view>
-      <view>{{price}}</view>
-
-      <view class="controls">
-        <image src="/image/edit.png" class="icon" bindtap="editRestaurant"
-          data-id="{{id}}" />
-
-        <image src="/image/recycling-bin.png" class="icon"
-          bindtap="deleteRestaurant" data-id="{{id}}" />
-      </view>
-
+<view class="banner-show-space" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1960&q=80);">
     </view>
 
+<view class="container-show-spaces">
+
+    <view class="h3">WeWork</view>
+    <view class="address">5th ave, New York</view>
+      <view class="h3">{{name}}</view>
+      <view class="address">{{address}}</view>
+      <view>{{price}}</view>
+
+    <view class="amenities">Amenities</view>
+
+    <view class="amenities-items">
+ 
+      <image src="/images/wifi.png" class="icon"/>
+      <image src="/images/coffee.png" class="icon"/>
+      <image src="/images/sofa.png" class="icon"/>
+      <image src="/images/beer.png" class="icon"/>
+      <image src="/images/purified_air.png" class="icon"/>
+  
+    </view>
 </view>
+      <view>
+      <button class="button-primary" bindtap="bookSpace">Book this space</button>
+      </view>
+
+
+
