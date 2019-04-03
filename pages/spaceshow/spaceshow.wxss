@@ -64,3 +64,8 @@ color: #626B80;
   image-size:cover; 
   background-position:center center; 
 }
+
+.flex-items {
+  display: flex;
+  align-items: center; 
+}
