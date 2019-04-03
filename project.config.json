@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -78,6 +78,13 @@
 					"id": 5,
 					"name": "Me",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Space new",
+					"pathName": "pages/spacenew/spacenew",
 					"query": "",
 					"scene": null
 				}

@@ -1,29 +1,45 @@
-<template name="form">
-
-  <view class="header">
-  <view class="h2-header">List your own space</view>
-  </view>
+<view class="banner-short" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1960&q=80);">
   <view class="container">
-  <view class="wrap">
+    <text class="title-white">Create my listing</text>
+    </view>
+    </view>
+ 
+ <view class="container-book-space">
   
     <form bindsubmit="bindSubmit">
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height" name="name" maxlength="-1" auto-height />
+      <textarea value="{{name}}" style="input-size"placeholder="Name" class="input-height"    name="name" maxlength="-1" auto-height />
       </view>
     </view>
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{address}}" style="input-size"placeholder="Address" class="input-height" name="address" maxlength="-1" auto-height />
+      <textarea value="{{address_details}}" style="input-size"placeholder="Address" class="input-height" name="address_details" maxlength="-1" auto-height />
       </view>
     </view>
 
-    <button  style="margin-bottom:50px "type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+           <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{price}}" style="input-size"placeholder="Price per day" class="input-height" name="price" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+       <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{picture}}" style="input-size"placeholder="Picture" class="input-height" name="picture" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+           <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{available_spots}}" style="input-size"placeholder="Number of available spots" class="input-height" name="available_spots" maxlength="-1" auto-height />
+      </view>
+    </view>
+
+    <button  class="button-primary" form-type="submit" loading="{{loading}}">Submit</button>
     </form>
 
+  
   </view>
-  </view>
-
-</template>
