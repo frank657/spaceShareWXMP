@@ -12,6 +12,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    // api: http://localhost:3000/api/v1/bookings
+
 
   },
 

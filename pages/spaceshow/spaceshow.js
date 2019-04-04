@@ -1,20 +1,29 @@
 // pages/spacesshow/spacesshow.js
+var app = getApp()
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
+  },
 
+  bookSpace: function (s) {
+    console.log(this.data.space_id)
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    this.setData({space_id: options.id})
+    console.log(options.id)
     let page = this
     wx.request({
-      url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${options.id}`,
+      // url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${options.id}`,
+      url: `http://localhost:3000/api/v1/spaces/${options.id}`,
+      
       success(res) {
         console.log(res.data)
         page.setData(res.data)
