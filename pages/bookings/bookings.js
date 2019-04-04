@@ -13,6 +13,7 @@ Page({
    */
   onLoad: function (options) {
 
+
   },
 
   /**
@@ -26,7 +27,31 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    let page = this;
+    console.log("index is here")
 
+    // // Display toast when loading
+    // wx.showToast({
+    //   title: 'Updating',
+    //   icon: 'success',
+    //   duration: 3000
+    // });
+
+    // Get api data
+    wx.request({
+      url: "http://localhost:3000/api/v1/bookings",
+      method: 'GET',
+      success(res) {
+        const bookings = res.data.bookings;
+
+        // Update local data
+        page.setData({
+          bookings: bookings
+        });
+
+        wx.hideToast();
+      }
+    });
   },
 
   /**

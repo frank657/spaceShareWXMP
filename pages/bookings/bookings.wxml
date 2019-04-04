@@ -3,3 +3,25 @@
     <text class="title-white">Your bookings</text>
     </view>
     </view>
+
+<view wx:for="{{bookings}}" wx:for-item="booking" wx:key="booking.id" bindtap="showBooking" class="card" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{booking.space.picture}}');" data-space="{{booking}}">
+
+<view class="flex">
+
+  <view class="card-booking">
+    {{booking.date}}
+  </view>
+
+   <view class="card-booking">
+    {{booking.space.name}}
+  </view>
+
+  <view class="card-description">
+
+    <!-- <view class="price">
+      {{space.price}}
+      per day
+    </view>" -->
+  </view>
+  </view>
+</view>
