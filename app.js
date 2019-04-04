@@ -22,7 +22,9 @@ App({
       }, 
     })
   },
-  globalData: {}
+  globalData: {
+    districts: ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
+  }
 })
 
 
