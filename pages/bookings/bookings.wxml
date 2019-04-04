@@ -1,5 +1,5 @@
 <view class="banner-short" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1960&q=80);">
   <view class="container">
     <text class="title-white">Your bookings</text>
-    </view>
-    </view>
+  </view>
+</view>
