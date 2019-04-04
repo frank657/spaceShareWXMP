@@ -13,12 +13,13 @@
     {{space.name}}
   </view>
 
-  <view class="card-description">
-
-    <!-- <view class="price">
-      {{space.price}}
-      per day
-    </view>" -->
+  <view class="price">
+      {{space.price}} 
+    </view>
+  <view class="per-day">
+  per day
   </view>
+  <view class="rmb">RMB</view>
+
   </view>
 </view>

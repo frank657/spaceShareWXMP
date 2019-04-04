@@ -14,7 +14,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log('loading user info')
     const userInfo = app.globalData.userInfo
+    console.log(userInfo)
     this.setData({
       userId: app.globalData.userId,
       nickName: userInfo.nickName,
