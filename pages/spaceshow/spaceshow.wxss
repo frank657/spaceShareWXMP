@@ -52,6 +52,7 @@ color: #626B80;
   font-size: 14px;
   line-height: 16px;
   color: #626B80;
+  margin-bottom: 10px;
 }
 
 .amenities-items {
@@ -63,6 +64,8 @@ color: #626B80;
   height: 20px;
   image-size:cover; 
   background-position:center center; 
+  width:25px;
+  margin-right:15px;
 }
 
 .flex-items {
