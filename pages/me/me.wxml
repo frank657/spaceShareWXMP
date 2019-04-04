@@ -1,15 +1,23 @@
 <view class="banner-short">
-  <image class="avatar" src="/images/frank.png"/>
+  <image class="avatar" src="{{profile_picture}}"/>
   <view>
-    <view class="title-white-me">Frank Zhu</view>
-    <view class="subtitle-white-me">funfrank@gmail.com</view>
+    <view class="title-white-me">{{nickName}}</view>
+    <!-- <view class="subtitle-white-me">funfrank@gmail.com</view> -->
   </view>
 </view>
 
-<view class="container-show-spaces">
-  <view class="my-listings">My listings</view>
-  <view class="note">You don't have any listings yet. Want to become a space owner?</view>
+<view wx:if="{{manager}}"> 
+  <view class="container-show-spaces">
+    <view class="my-listings">My listings</view>
+  </view>
+
+  <button class="button-small" form-type="submit" bindtap="createSpace" loading="{{loading}}">Create a new listing</button>
 </view>
 
+<view wx:if="{{manager === false}}"> 
+  <view class="container-show-spaces">
+    <view class="note">You don't have any listings yet. Want to become a space owner?</view>
+  </view>
 
-<button class="button-small" form-type="submit" bindtap="createSpace" loading="{{loading}}">Create my first listing</button>
+  <button class="button-small" form-type="submit" bindtap="createSpace" loading="{{loading}}">Create my first listing</button>
+</view>
