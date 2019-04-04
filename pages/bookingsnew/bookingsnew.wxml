@@ -4,3 +4,15 @@
     </view>
  </view>
   
+<form bindsubmit="bindSubmit">
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2019-04-01" end="2019-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      Select date {{date}}
+    </view>
+  </picker>
+</view>
+
+<button  class="button-primary" form-type="submit" loading="{{loading}}">Book now</button>
+
+</form>
