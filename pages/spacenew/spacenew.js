@@ -25,7 +25,7 @@ Page({
    */
   onLoad: function (options) {
   },
-
+ 
   // New Space Submission
   bindSubmit: function (s) {
     const name = s.detail.value.name;

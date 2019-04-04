@@ -20,7 +20,7 @@
     </view>
 </view>
       <view>
-      <button class="button-primary" bindtap="bookSpace">Book this space</button>
+      <button class="button-primary" bindtap="bookSpace" data-id="{{id}}">Book this space</button>
       </view>
 
 

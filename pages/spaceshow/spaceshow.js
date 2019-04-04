@@ -21,14 +21,22 @@ Page({
     console.log(options.id)
     let page = this
     wx.request({
-      url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${options.id}`,
-      // url: `http://localhost:3000/api/v1/spaces/${options.id}`,
+      // url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${options.id}`,
+      url: `http://localhost:3000/api/v1/spaces/${options.id}`,
       
       success(res) {
         console.log(res.data)
         page.setData(res.data)
       }
     })
+  }, 
+
+  bookSpace: function (e) {
+    console.log('Trying to book a space')
+    console.log(e)
+    wx.navigateTo({
+    url: `../bookingsnew/bookingsnew?spaceId=${e.currentTarget.dataset.id}`
+    });
   },
 
   /**

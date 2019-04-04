@@ -40,20 +40,20 @@ Page({
     // });
 
     // Get api data
-    wx.request({
-      url: "http://localhost:3000/api/v1/bookings",
-      method: 'GET',
-      success(res) {
-        const bookings = res.data.bookings;
+    // wx.request({
+    //   url: "http://localhost:3000/api/v1/bookings",
+    //   method: 'GET',
+    //   success(res) {
+    //     const bookings = res.data.bookings;
 
-        // Update local data
-        page.setData({
-          bookings: bookings
-        });
+    //     // Update local data
+    //     page.setData({
+    //       bookings: bookings
+    //     });
 
-        wx.hideToast();
-      }
-    });
+    //     wx.hideToast();
+    //   }
+    // });
   },
 
   /**
