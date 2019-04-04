@@ -24,7 +24,17 @@
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{district}}" style="input-size"placeholder="District" class="input-height"    name="district" maxlength="-1" auto-height />
+      <!-- <textarea value="{{district}}" style="input-size"placeholder="{{selectData[index]}}" class="input-height"    name="district" maxlength="-1" auto-height /> -->
+
+<view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+    </view>
+    <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'>
+        <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+</view>
+      
       </view>
     </view>
 
