@@ -35,6 +35,7 @@ Page({
    */
   onShow: function () {
     let page = this;
+    console.log("index is here")
 
     // // Display toast when loading
     // wx.showToast({
