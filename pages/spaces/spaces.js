@@ -45,8 +45,8 @@ Page({
 
     // Get api data
     wx.request({
-      // url: "https://spaceshare-frank657.herokuapp.com/api/v1/spaces",
-      url: "http://localhost:3000/api/v1/spaces",
+      url: "https://spaceshare-frank657.herokuapp.com/api/v1/spaces",
+      // url: "http://localhost:3000/api/v1/spaces",
       method: 'GET',
       success(spa) {
         const spaces = spa.data.spaces;
