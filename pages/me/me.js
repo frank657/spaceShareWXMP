@@ -27,7 +27,7 @@ Page({
       province: userInfo.province,
       city: userInfo.city
     })
-
+  
     const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
     const page = this
 
@@ -58,7 +58,25 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+  // let page = this;
+  // // const userId = app.globalData.userId;
 
+  //   // Get api data
+  //   wx.request({
+  //     url: `http://localhost:3000/api/v1/users/${userId}`,
+  //     method: 'GET',
+  //     success(res) {
+  //       console.log(res)
+  //       const spaces = res.data.spaces;
+
+  //       console.log("index is here")
+  //   // Update local data
+  //       page.setData({
+  //         spaces: spaces
+  //       });
+
+  //     }
+  //   });
   },
 
   /**

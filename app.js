@@ -15,8 +15,11 @@ App({
           },
           // insert next code here
           success: (res) => {
-            console.log(res)
+            console.log(11, res)
             this.globalData.userId = res.data.userId
+          }, 
+          fail: (res) => {
+            console.log(12, res)
           }
         })
       }, 
