@@ -1,6 +1,7 @@
 App({
   onLaunch: function () {
-    const host = 'http://localhost:3000/'
+    const host = 'https://spaceshare-frank657.herokuapp.com/'
+    // const host = 'http://localhost:3000'
     console.log('processing to login')
     wx.login({
       success: (res) => {
