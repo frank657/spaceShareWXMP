@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -86,6 +86,12 @@
 					"name": "Space new",
 					"pathName": "pages/spacenew/spacenew",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bookingtedt",
+					"pathName": "pages/bookingtest/bookingtest",
 					"scene": null
 				}
 			]
