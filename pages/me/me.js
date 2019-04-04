@@ -1,4 +1,6 @@
 // pages/me/me.js
+const app = getApp()
+
 Page({
 
   /**
@@ -12,7 +14,31 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log('loading user info')
+    const userInfo = app.globalData.userInfo
+    console.log(userInfo)
+    this.setData({
+      userId: app.globalData.userId,
+      nickName: userInfo.nickName,
+      profile_picture: userInfo.avatarUrl,
+      gender: userInfo.gender,
+      language: userInfo.language,
+      country: userInfo.country,
+      province: userInfo.province,
+      city: userInfo.city
+    })
 
+    const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
+    const page = this
+
+    wx.request({
+      url: url,
+      success: function(res) {
+        page.setData({
+          manager: res.data.manager
+        })
+      },
+    })
  },
 
   createSpace: function () {

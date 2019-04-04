@@ -5,17 +5,17 @@
 
     <view class="h3">{{name}}</view>
     <view class="address">{{address_details}}</view>
-    <view>{{price}}RMB per day</view>
+    <view class="price">{{price}}RMB per day</view>
 
     <view class="amenities">Amenities</view>
 
     <view class="flex-items">
  
-      <image src="/images/wifi.png"/>
-      <image src="/images/coffee.png"/>
-      <image src="/images/sofa.png"/>
-      <image src="/images/beer.png"/>
-      <image src="/images/purified_air.png"/>
+      <image src="/images/wifi.png" class="icon"/>
+      <image src="/images/coffee.png" class="icon"/>
+      <image src="/images/sofa.png" class="icon"/>
+      <image src="/images/beer.png" class="icon"/>
+      <image src="/images/purified_air.png" class="icon"/>
   
     </view>
 </view>
