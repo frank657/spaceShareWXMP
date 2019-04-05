@@ -11,30 +11,17 @@
     <view class="my-listings">My listings</view>
   </view>
 
-<view wx:for="{{spaces}}" wx:for-item="space" wx:key="space.id"  class="card" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{booking.space.picture}}');" data-space="{{space}}">
-
-<view class="flex">
-
-  <view class="card-booking">
-    {{space.name}}
+  <view wx:for="{{spaces}}" wx:for-item="space" wx:key="space.id" bindtap="showSpace" class="card" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{space.picture}}');" data-space="{{space}}">
+    <view class="flex">
+      <view class="card-space-name">{{space.name}}</view>
+      <view class="price">{{space.price}} </view>
+      <view class="per-day">per day</view>
+      <view class="rmb">RMB</view>
+    </view>
   </view>
-
-   <view class="card-booking">
-    {{space.address}}
-  </view>
-
-  <view class="card-description">
-
-    <!-- <view class="price">
-      {{space.price}}
-      per day
-    </view>" -->
-  </view>
-
-  </view>
-</view>
 
   <button class="button-small" form-type="submit" bindtap="createSpace" loading="{{loading}}">Create a new listing</button>
+
 </view>
 
 <view wx:if="{{manager === false}}"> 

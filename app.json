@@ -6,7 +6,8 @@
     "pages/bookings/bookings",
     "pages/bookingsnew/bookingsnew",
     "pages/me/me",
-    "pages/spacenew/spacenew"
+    "pages/spacenew/spacenew",
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "dark",

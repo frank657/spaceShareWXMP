@@ -25,21 +25,26 @@ Page({
       language: userInfo.language,
       country: userInfo.country,
       province: userInfo.province,
-      city: userInfo.city
+      city: userInfo.city,
+      spaces: app.globalData.spaces.filter(space => space.user_id === app.globalData.userId)
     })
-  
-    const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
+    this.userIsManager()
+ },
+
+  userIsManager: function () {
+    const url = `https://spaceshare-frank657.herokuapp.com/api/v1/users/${this.data.userId}`
+    // const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
     const page = this
 
     wx.request({
       url: url,
-      success: function(res) {
+      success: function (res) {
         page.setData({
           manager: res.data.manager
         })
       },
     })
- },
+  },
 
   createSpace: function () {
     wx.navigateTo({
@@ -58,25 +63,14 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-  // let page = this;
-  // // const userId = app.globalData.userId;
+    this.userIsManager()
 
-  //   // Get api data
-  //   wx.request({
-  //     url: `http://localhost:3000/api/v1/users/${userId}`,
-  //     method: 'GET',
-  //     success(res) {
-  //       console.log(res)
-  //       const spaces = res.data.spaces;
+    this.setData({
+      spaces: app.globalData.spaces.filter(space => space.user_id === app.globalData.userId)
+    })
+    
 
-  //       console.log("index is here")
-  //   // Update local data
-  //       page.setData({
-  //         spaces: spaces
-  //       });
-
-  //     }
-  //   });
+    // this.data["spaces"] = app.globalData.spaces
   },
 
   /**
