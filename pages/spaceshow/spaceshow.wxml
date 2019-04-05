@@ -1,11 +1,10 @@
-<view class="banner-show-space" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1960&q=80);">
+<view class="banner-show-space" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{picture}}');" data-space="{{space}}">
     </view>
 
 <view class="container-show-spaces">
 
     <view class="h3">{{name}}</view>
     <view class="address">{{address_details}}</view>
-    <view class="price">{{price}}RMB per day</view>
 
     <view class="amenities">Amenities</view>
 
@@ -18,6 +17,8 @@
       <image src="/images/purified_air.png" class="icon"/>
   
     </view>
+
+      <view class="price">{{price}}RMB per day</view>
 </view>
       <view>
       <button class="button-primary" bindtap="bookSpace" data-id="{{id}}">Book this space</button>

@@ -5,16 +5,19 @@
   </view>
 </view>
 
-<view class="section"> 
+<view class="user-input">  
+<view class="section">
   <!-- <view class="section__title">Regular selector</view> -->
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{districts}}">
     <view class="picker">
-      Search on district: {{array[index]}}
+      Pick a district {{array[index]}}
     </view>
+   
   </picker>
+   </view>
 </view>
 
-<button type="default" bindtap="showAll"> Show all </button>
+<button class="button-white" bindtap="showAll"> Show all </button>
 
 <!-- SPACE CARDS -->
 <view wx:for="{{spaces}}" wx:for-item="space" wx:key="space.id" bindtap="showSpace" class="card" style="background-image: linear-gradient(-180deg, rgba(98,107,128,0.00) 0%, rgba(74,81,98,0.00) 23%, #242933 100%), url('{{space.picture}}');" data-space="{{space}}">
