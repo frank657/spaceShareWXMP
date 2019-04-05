@@ -44,8 +44,8 @@ Page({
       const page = this
       // Get api data
       wx.request({
-        // url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/bookings`,
-        url: `http://localhost:3000/api/v1/spaces/${page.data.spaceId}/bookings`,
+        url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${page.data.spaceId}/bookings`,
+        // url: `http://localhost:3000/api/v1/spaces/${page.data.spaceId}/bookings`,
 
         method: 'POST',
         data: booking,

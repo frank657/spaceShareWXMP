@@ -55,8 +55,8 @@ Page({
 
     // Get api data
   wx.request({
-    url: `http://localhost:3000/api/v1/users/${userId}`,
-  method: 'GET',
+    // url: `http://localhost:3000/api/v1/users/${userId}`,
+    url: `https://spaceshare-frank657.herokuapp.com/api/v1/users/${userId}`,
   success(res) {
     console.log(res)
     const bookings = res.data.bookings;
