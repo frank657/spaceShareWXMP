@@ -1,1 +1,2 @@
 <map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 100vh;" markers="{{mk}}"></map>
+<!-- <button bindtap='getLocation'>Locate</button> -->
