@@ -1,4 +1,6 @@
 // pages/bookings/bookings.js
+const app = getApp();
+
 Page({
 
   /**
@@ -12,12 +14,23 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(options)
     // api: http://localhost:3000/api/v1/bookings
 
-
+    // this.setData({
+    //   user_id: options.user_id
+    // })
 
   },
 
+
+  showSpace(e) {
+    const data = e.currentTarget.dataset;
+    const space = data.space;
+    wx.navigateTo({
+      url: `../spaceshow/spaceshow?id=${space.id}`
+    });
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */
@@ -30,7 +43,8 @@ Page({
    */
   onShow: function () {
     let page = this;
-    console.log("index is here")
+    const userId = app.globalData.userId;
+  
 
     // // Display toast when loading
     // wx.showToast({
@@ -40,20 +54,22 @@ Page({
     // });
 
     // Get api data
-    // wx.request({
-    //   url: "http://localhost:3000/api/v1/bookings",
-    //   method: 'GET',
-    //   success(res) {
-    //     const bookings = res.data.bookings;
+  wx.request({
+    url: `http://localhost:3000/api/v1/users/${userId}`,
+  method: 'GET',
+  success(res) {
+    console.log(res)
+    const bookings = res.data.bookings;
 
+    console.log("index is here")
     //     // Update local data
-    //     page.setData({
-    //       bookings: bookings
-    //     });
+  page.setData({
+  bookings: bookings
+   });
 
     //     wx.hideToast();
-    //   }
-    // });
+ }
+  });
   },
 
   /**

@@ -5,7 +5,7 @@
 }
 .input-height {
   height: 10em;
-}
+} 
 .input-label {
   font-size: 35rpx;
 }
@@ -50,4 +50,22 @@ font-style: normal;
 font-weight: 900;
 font-size: 14px;
 text-align: center;
+}
+
+.picker {
+background: #fff
+box-sizing: border-box;
+border-radius: 10px;
+color: #3165EC;
+border: 2px solid rgba(49,101,236,100);
+width: 90%;
+font-family: Lato;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+text-align: center;
+margin-left: 5%;
+line-height: 35px;
+margin-bottom: 20px;
+
 }
