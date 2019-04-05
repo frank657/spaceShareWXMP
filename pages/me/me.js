@@ -28,7 +28,8 @@ Page({
       city: userInfo.city
     })
 
-    const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
+    const url = `https://spaceshare-frank657.herokuapp.com/api/v1/users/${this.data.userId}`
+    // const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
     const page = this
 
     wx.request({

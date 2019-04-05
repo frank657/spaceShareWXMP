@@ -5,6 +5,8 @@
   </view>
 </view>
 
+<navigator url="../map/map">map</navigator>
+
 <view class="section">
   <!-- <view class="section__title">Regular selector</view> -->
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{districts}}">
