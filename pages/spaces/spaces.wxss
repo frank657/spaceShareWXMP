@@ -87,3 +87,12 @@
   top: 107px;
   left: 302px;
 }
+
+.section {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 5%;
+}

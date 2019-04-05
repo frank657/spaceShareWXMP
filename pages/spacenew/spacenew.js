@@ -1,6 +1,6 @@
 // pages/spacenew/spacenew.js
 var app = getApp()
-const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
+// const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
 
 
 Page({
@@ -9,7 +9,7 @@ Page({
    * Page initial data
    */
   data: {
-    districts: districts
+    districts: app.globalData.districts
   },
 
   // bindChange: function (e) {

@@ -1,12 +1,26 @@
+const app = getApp()
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    districts: app.globalData.districts
   },
 
+  bindPickerChange: function (e) {
+    const district = this.data.districts[e.detail.value]
+    this.setData ({
+      spaces: (app.globalData.spaces.filter(space => space.district === district ))
+    })
+  },
+
+  showAll: function (e) {
+    this.setData ({
+      spaces: app.globalData.spaces
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
@@ -53,6 +67,7 @@ Page({
       success(spa) {
         const spaces = spa.data.spaces;
 
+        app.globalData.spaces = spaces
         // Update local data
         page.setData({
           spaces: spaces
