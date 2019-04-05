@@ -61,8 +61,9 @@ Page({
       success(a) {
         console.log(11,a)
         // set data
-        wx.switchTab({
-          url: '/pages/spaces/spaces'
+        // wx.switchTab({
+        wx.reLaunch({
+          url: '/pages/me/me'
         });
       }
     });
