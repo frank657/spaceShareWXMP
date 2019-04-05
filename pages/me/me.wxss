@@ -88,3 +88,56 @@ width: 30px;
 margin: 30px;
 text-align: center;
 }
+
+/* Cards */
+.card {
+  height: 150px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  width: 90%;
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
+
+.card-space-name {
+  position: absolute;
+  top: 115px;
+  left: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.price {
+  position: absolute;
+  top: 100px;
+  left: 280px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.per-day {
+  position: absolute;
+  top: 120px;
+  left: 280px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.rmb {
+  font-size: 10px;
+  position: absolute;
+  top: 107px;
+  left: 302px;
+}
