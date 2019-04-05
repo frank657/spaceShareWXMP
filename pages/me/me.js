@@ -64,6 +64,13 @@ Page({
    */
   onShow: function () {
     this.userIsManager()
+
+    this.setData({
+      spaces: app.globalData.spaces.filter(space => space.user_id === app.globalData.userId)
+    })
+    
+
+    // this.data["spaces"] = app.globalData.spaces
   },
 
   /**
