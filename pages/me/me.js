@@ -25,22 +25,26 @@ Page({
       language: userInfo.language,
       country: userInfo.country,
       province: userInfo.province,
-      city: userInfo.city
+      city: userInfo.city,
+      spaces: app.globalData.spaces.filter(space => space.user_id === app.globalData.userId)
     })
+    this.userIsManager()
+ },
 
+  userIsManager: function () {
     const url = `https://spaceshare-frank657.herokuapp.com/api/v1/users/${this.data.userId}`
     // const url = `http://localhost:3000/api/v1/users/${this.data.userId}`
     const page = this
 
     wx.request({
       url: url,
-      success: function(res) {
+      success: function (res) {
         page.setData({
           manager: res.data.manager
         })
       },
     })
- },
+  },
 
   createSpace: function () {
     wx.navigateTo({
@@ -59,7 +63,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    this.userIsManager()
   },
 
   /**
