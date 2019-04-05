@@ -23,11 +23,20 @@ Page({
     // console.log(33, app.globalData.userId)
     // console.log('checking which data are loading')
     // console.log(options.spaceId)
-    this.setData({
-      spaceId: options.spaceId
+    this.setData({ space_id: options.id })
+    let page = this
+    wx.request({
+      url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces/${options.id}`,
+      // url: `http://localhost:3000/api/v1/spaces/${options.id}`,
+
+      success(res) {
+        console.log(res.data)
+        page.setData(res.data)
+      }
     })
   },
 
+  
     // New booking Submission
     bindSubmit: function (s) {
       const date = s.detail.value.date;
