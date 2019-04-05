@@ -14,6 +14,10 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    this.reloadPage()
+  },
+
+  reloadPage: function () {
     console.log('loading user info')
     const userInfo = app.globalData.userInfo
     console.log(userInfo)
@@ -29,7 +33,7 @@ Page({
       spaces: app.globalData.spaces.filter(space => space.user_id === app.globalData.userId)
     })
     this.userIsManager()
- },
+  },
 
   userIsManager: function () {
     const url = `https://spaceshare-frank657.herokuapp.com/api/v1/users/${this.data.userId}`
@@ -91,7 +95,7 @@ Page({
    * Page event handler function--Called when user drop down
    */
   onPullDownRefresh: function () {
-
+    this.reloadPage()
   },
 
   /**
