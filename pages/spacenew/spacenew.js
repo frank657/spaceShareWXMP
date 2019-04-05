@@ -1,31 +1,52 @@
-// pages/spacenew/spacenew.js
 var app = getApp()
-// const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
-
 
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
-    districts: app.globalData.districts
+    selectShow: false,
+    selectData: ["District", "Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"],
+    index: 0,
   },
 
-  // bindChange: function (e) {
-  //   const val = e.detail.value
-  //   console.log(val)
-  //   this.setData({
-  //     district: this.data.districts[val[0]],
-  //   })
-  // },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
+  selectTap() {
+    this.setData({
+      selectShow: !this.data.selectShow
+    });
   },
- 
+
+  optionTap(e) {
+    let Index = e.currentTarget.dataset.index;
+    this.setData({
+      index: Index,
+      selectShow: !this.data.selectShow
+    });
+  },
+  // })
+  // const districts = ["Huangpu", "Xuhui", "Changning", "Jing'an", "Putuo", "Hongkou", "Yangpu", "Minhang", "Baoshan", "Jiading", "Pudong", "Jinshan", "Songjiang", "Qingpu", "Fengxian", "Chongming"]
+
+
+  // Page({
+
+  //   /**
+  //    * Page initial data
+  //    */
+  //   data: {
+  //     districts: districts
+  //   },
+
+  //   // bindChange: function (e) {
+  //   //   const val = e.detail.value
+  //   //   console.log(val)
+  //   //   this.setData({
+  //   //     district: this.data.districts[val[0]],
+  //   //   })
+  //   // },
+
+  //   /**
+  //    * Lifecycle function--Called when page load
+  //    */
+  //   onLoad: function (options) {
+  //   },
+
   // New Space Submission
   bindSubmit: function (s) {
     const name = s.detail.value.name;
@@ -38,7 +59,7 @@ Page({
 
     const space = {
       name: name,
-      district: district, 
+      district: district,
       address_details: address,
       available_spots: spots,
       picture: 'https://source.unsplash.com/800x450/?office',
@@ -55,11 +76,10 @@ Page({
     // Get api data
     wx.request({
       url: `https://spaceshare-frank657.herokuapp.com/api/v1/spaces`,
-      // url: `http://localhost:3000/api/v1/spaces`,
       method: 'POST',
       data: space,
       success(a) {
-        console.log(11,a)
+        console.log(11, a)
         // set data
         wx.switchTab({
           url: '/pages/spaces/spaces'
@@ -68,8 +88,6 @@ Page({
     });
 
   },
-
-
 
 
 
