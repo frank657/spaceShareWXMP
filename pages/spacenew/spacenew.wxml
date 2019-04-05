@@ -24,17 +24,7 @@
 
     <view class="user-input">
       <view class="text-area-wrap">
-      <!-- <textarea value="{{district}}" style="input-size"placeholder="{{selectData[index]}}" class="input-height"    name="district" maxlength="-1" auto-height /> -->
-
-<view class='select_box'>
-    <view class='select' catchtap='selectTap'>
-        <text class='select_text'>{{selectData[index]}}</text>
-    </view>
-    <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'>
-        <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
-    </view>
-</view>
-      
+      <textarea value="{{district}}" style="input-size"placeholder="District" class="input-height"    name="district" maxlength="-1" auto-height />
       </view>
     </view>
 
@@ -62,47 +52,19 @@
       </view>
     </view>
 
-
-
-<!-- <view class="flex-items" role=" " aria-label=" ">
-<image class="icon"src="/images/wifi.png"></image>
-<image class="icon"src="/images/coffee.png"></image>
-<image class="icon"src="/images/sofa.png"></image>
-<image class="icon"src="/images/beer.png"></image>
-<image class="icon"src="/images/purified_air.png"></image>
-</view> -->
-
-<view class="amenities_title">Amenities</view>
-    <view class="user-input"> 
-      <!-- <view class="section__title">Amenities</view> -->
-      <view class="flex-items">
+    <view class="user-input">
+      <view class="section__title">Amenities</view>
       <checkbox-group name="amenities">
-        <view>
-          <label><checkbox value="wiFi"/></label>
-          <image class="icon"src="/images/wifi.png"></image>
-        </view>
-      
-        <view>
-          <label><checkbox value="sofa"/></label>
-          <image class="icon"src="/images/sofa.png"></image>
-        </view>
-
-        <view>
-          <label><checkbox value="air"/></label>
-          <image class="icon"src="/images/purified_air.png"></image>
-        </view>
-        <view>
-          <label><checkbox value="coffee"/></label>
-          <image class="icon"src="/images/coffee.png"></image>
-        </view>
-        <view>
-          <label><checkbox value="beer"/></label>
-          <image class="icon"src="/images/beer.png"></image>
-        </view>
-      
+        <label><checkbox value="wifi"/>WiFi</label>
+        <label><checkbox value="sofa"/>Sofa Area</label>
+        <label><checkbox value="air"/>Purified Air</label>
+        <label><checkbox value="coffee"/>Coffee</label>
+        <label><checkbox value="beer"/>Beer</label>
       </checkbox-group>
     </view>
-    </view>
+
     <button  class="button-primary" form-type="submit" loading="{{loading}}">Submit</button>
     </form>
+
+  
   </view>
